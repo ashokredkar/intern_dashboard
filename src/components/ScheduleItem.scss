@@ -1,0 +1,132 @@
+.sItem{
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+
+    .sHead{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .sHeadLeft{
+            h4{
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+            p{
+                font-size: 12px;
+                font-weight: 500;
+                color: var(--gray);
+            }
+        }
+
+        .sHeadRight{
+            .myIcon{
+                margin-left: 1rem;
+            }
+            .editIcon{
+                color: var(--gray);
+            }
+            .deleteIcon{
+                color: tomato;
+            }
+            .upDownIcon{
+                color: var(--primary);
+                font-size: 25px;
+            }
+        }
+    }
+    .sInfo{
+        padding: 2rem 0;
+
+        .infoDates{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            .dates{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                p{
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: var(--gray);
+                    margin-bottom: 0.3rem;
+                }
+                h5{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: black;
+                }
+                .startDate{
+                    margin-right: 5rem;
+                }
+            }
+        }
+        .infoDays{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .day{
+                flex: 1;
+                border: 1px solid rgb(207, 207, 207);
+                padding: 0.8rem 1.2rem;
+                margin-right: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-bottom: 0.8rem;
+                
+                .circle{
+                    height: 12px;
+                    width: 12px;
+                    border-radius: 50%;
+                    background: white;
+                    border: 1px solid rgb(207, 207, 207);
+                    margin-right: 0.5rem;
+                }
+                p{
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: gray;
+                }
+            }
+            .activeDay{
+                border: 2px solid var(--primary);
+
+                .circle{
+                    background: var(--primary);
+                }
+                p{
+                    color: var(--primary);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .infoDates{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .dates{
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        .startDate{
+            margin-right: 0 !important;
+            margin-bottom: 0.5rem;
+        }
+    }
+}

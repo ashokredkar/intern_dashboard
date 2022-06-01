@@ -1,0 +1,111 @@
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background: white;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+
+    .navList {
+        display: flex;
+
+        .sliderIcon {
+            font-size: 22px;
+            color: var(--primary);
+            cursor: pointer;
+            display: none;
+        }
+
+        .nav-menu {
+            padding: 1rem;
+            color: var(--gray);
+
+            &:hover {
+                color: black;
+            }
+        }
+
+        .active {
+            font-weight: 700;
+            color: black;
+            border-bottom: 3.5px solid var(--primary);
+        }
+    }
+
+    .navProfileContainer {
+        display: flex;
+        align-items: center;
+
+        .navSeparator {
+            width: 1px;
+            height: 25px;
+            background: var(--gray);
+            margin-right: 1rem;
+        }
+
+        .navProfile {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            img {
+                width: 35px;
+                margin-right: 0.5rem;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 300;
+                margin-right: 0.2rem;
+            }
+
+            .myIcon {
+                font-size: 18px;
+            }
+        }
+
+        .profileMenu {
+            position: absolute;
+            top: 3rem;
+            right: 2rem;
+            background: white;
+            border-radius: 5px;
+            padding: 1rem 0;
+            width: 120px;
+            border: 1px solid var(--gray);
+
+            p {
+                font-size: 14px;
+                padding: 0.3rem 1rem;
+                cursor: pointer;
+
+                &:hover {
+                    background: var(--primary);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navContainer{
+        padding: 0 2rem 0 0;
+
+        .navList{
+            .sliderIcon {
+                display: block;
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 650px) {
+    .navProfile {
+        p {
+            display: none;
+        }
+    }
+}

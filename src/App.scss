@@ -1,0 +1,103 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-width: 0%;
+    text-decoration: none;
+}
+
+.myApp{
+    display: flex;
+
+    // .appLeft{
+    //     flex: 1;
+    // }
+    .appRight{
+        width: 100%;
+    }
+}
+
+.myBtn{
+    background: var(--primary);
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.myBtn2{
+    background: rgb(205, 205, 205);
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 0.5rem 1.5rem ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.myIcon{
+    font-size: 22px;
+    cursor: pointer;
+}
+h4{
+  font-size: 15px;
+}
+
+p{
+  margin-bottom: 0 !important;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.slide-bottom {
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-25%);
+      transform: translateY(-25%);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-25%);
+      transform: translateY(-25%);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+@media screen and (min-width: 1500px) {
+  .myApp{
+    display: flex;
+
+    .appLeft{
+        flex: 1;
+    }
+    .appRight{
+        flex: 5;
+    }
+}
+}
